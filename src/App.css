@@ -1,38 +1,132 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.body {
+  overflow: hidden;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #ededed;
+}
+
+.container_auth {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  height: 500px;
+  width: 980px;
+  max-width: 100%;
+  border-radius: 34px;
+}
+
+.form {
+  padding: 20px 20px;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.form h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 71px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: 600;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.form .icons a {
+  color: #111;
+  border: 0.4px solid #111;
+  padding: 4px 6px;
+  font-size: 18px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.form .icons {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: center;
+  gap: 16px;
 }
 
-.App-link {
-  color: #61dafb;
+.form .icons a:hover {
+  color: #efc700;
+  transition: ease-in-out 0.7s;
+  border-radius: 14px;
+  border: 0.4px solid rgb(103, 86, 0);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.formInputs {
+  margin-top: 20px;
+}
+
+.formInputs form {
+  display: flex;
+  flex-direction: column;
+}
+
+.formInputs form input {
+  width: 360px;
+  height: 40px;
+  margin-bottom: 20px;
+  border: none;
+  background-color: #ededed;
+  outline: none;
+  padding: 0 14px;
+  border-radius: 12px;
+}
+
+.formInputs form input::placeholder {
+  color: #111;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+.formInputs form button {
+  width: 360px;
+  height: 40px;
+  border-radius: 12px;
+  border: none;
+}
+
+.left_sider_about {
+  background-color: #4F4537;
+  border-radius: 140px 0 0 140px;
+  background-image: linear-gradient(
+    to right,
+    #ffba00,
+    #efc700,
+    #dbd400,
+    #c4e000,
+    #a8eb12
+  );
+}
+
+.left_sider_about h1 {
+  text-align: center;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 42px;
+  margin-top: 70px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  width: 500px;
+}
+
+.left_sider_about .text_about_sider p{ 
+  margin-left: 30px;
+  width: 500px;
+  color: #fff;
+  padding-right: 50px;
+  letter-spacing: 2px;
 }
